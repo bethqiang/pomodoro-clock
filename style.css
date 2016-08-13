@@ -1,0 +1,113 @@
+body {
+  background-color: #293241;
+  font-family: Muli;
+}
+
+#information {
+  margin: 10px auto;
+}
+#information a {
+  color: #FFFFFF;
+}
+
+.card {
+  width: 95%;
+  max-width: 350px;
+  margin: 0 auto 15px auto !important;
+}
+
+#add-work-btn,
+#work-time-set,
+#minus-work-btn {
+  display: inline;
+  font-size: 22px;
+}
+
+#add-break-btn,
+#break-time-set,
+#minus-break-btn {
+  display: inline;
+  font-size: 22px;
+}
+
+#add-ext-break-btn,
+#ext-break-time-set,
+#minus-ext-break-btn {
+  display: inline;
+  font-size: 22px;
+}
+
+#add-work-btn,
+#minus-work-btn,
+#add-break-btn,
+#minus-break-btn,
+#add-ext-break-btn,
+#minus-ext-break-btn {
+  color: #293241;
+}
+
+#pomo-num,
+#break-num {
+  display: inline;
+  font-size: 20px;
+}
+
+hr {
+  border: 1px solid #FFF484;
+  border-radius: 10px;
+  width: 95%;
+  max-width: 350px;
+}
+
+.card-title {
+  margin: 15px 0;
+}
+
+h1 {
+  font-size: 84px !important;
+}
+
+#time-div {
+  margin: 40px 0 30px 0;
+  padding: 10px;
+}
+
+button {
+  display: inline-block;
+  width: 80%;
+  height: 60px;
+  background: rgba(243, 156, 107, .8);
+  border: 0;
+}
+
+button:focus {
+  background: rgba(243, 156, 107, .8) !important;
+}
+
+#start,
+#pause,
+#resume,
+#reset {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+#start {
+  width: 87%;
+  margin: -10px 0 19px 0;
+}
+
+#pause,
+#resume,
+#reset {
+  width: 40%;
+  margin: -10px 3% 19px 3%;
+}
+
+footer {
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #FFF484;
+}

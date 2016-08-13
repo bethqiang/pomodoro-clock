@@ -1,0 +1,93 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <!-- pop up info box -->
+    <div id="information" class="container center">
+      <a class="modal-trigger" href="#modal1">about</a>
+    </div>
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>About This Pomodoro Clock</h4>
+        <p>Read about the Pomodoro Technique <a href="https://en.wikipedia.org/wiki/Pomodoro_Technique" target="_blank">here</a>.</p>
+        <p>Customize work, break, and extended break times.</p>
+        <p>Once 4 work sessions are completed, an extended break will happen in place of a normal break.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close btn-flat">Let's be productive!</a>
+      </div>
+    </div>
+    <!-- card -->
+    <div class="row">
+      <div class="card red accent-2 center">
+        <div class="card-content white-text">
+          <!-- customizable settings -->
+          <div id="adjust">
+            <div class="row">
+              <div class="col s4">
+                <p>work</p>
+                <a href="#" id="add-work-btn">+</a>
+                <p id="work-time-set">25</p>
+                <a href="#" id="minus-work-btn">-</a>
+              </div>
+              <div class="col s4">
+                <p>break</p>
+                <a href="#" id="add-break-btn">+</a>
+                <p id="break-time-set">5</p>
+                <a href="#" id="minus-break-btn">-</a>
+              </div>
+              <div class="col s4">
+                <p>long break</p>
+                <a href="#" id="add-ext-break-btn">+</a>
+                <p id="ext-break-time-set">15</p>
+                <a href="#" id="minus-ext-break-btn">-</a>
+              </div>
+            </div>
+          </div>
+          <!-- pomodoro/break count -->
+          <h2 id="work-num" class="card-title">pomodoro #1</h2>
+          <h2 id="break-num" class="card-title">break #1</h2>
+          <hr>
+          <!-- main display -->
+          <div id="time-div">
+            <div id="work-display">
+              <i id="work-icon" class="fa fa-laptop fa-4x"></i>
+              <h1 id="work-time-display">25:00</h1>
+              <h5 id="work-text">work</h5>
+            </div>
+            <div id="break-display">
+              <i id="coffee-icon" class="fa fa-coffee fa-4x"></i>
+              <h1 id="break-time-display">5:00</h1>
+              <h5 id="break-text">relax and be merry</h5>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <!-- buttons -->
+        <button id="start" class="z-depth-1">start</button>
+        <button id="pause" class="z-depth-1">pause</button>
+        <button id="resume" class="z-depth-1">resume</button>
+        <button id="reset" class="z-depth-1">reset</button>
+      </div>
+    </div>
+  </div>
+  <!-- audio -->
+  <audio id="audio">
+    <source src="sounds/notification.mp3" type="audio/mpeg">
+  </audio>
+  <!-- scripts -->
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p class="center">Created with <i class="fa fa-heart" style="color: #FF5252"></i> &amp; a whole lotta work by <a href="https://github.com/bethqiang">Beth Qiang</a></p>
+</footer>
