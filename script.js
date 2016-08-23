@@ -116,6 +116,7 @@ $(document).ready(function() {
       $("#break-num").html("break #" + breakNum);
       $("#break-num").show();
       $("#pause").hide();
+      $("#reset").hide();
       $("#start").show();
       state = "break";
       if (breakNum%4===0) {
@@ -147,6 +148,7 @@ $(document).ready(function() {
       $("#work-num").html("pomodoro #" + pomNum);
       $("#work-num").show();
       $("#pause").hide();
+      $("#reset").hide();
       $("#start").show();
       state = "work";
       $("#work-time-display").html(workTime + ":00");
